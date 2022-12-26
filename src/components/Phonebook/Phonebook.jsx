@@ -28,10 +28,9 @@ let isAdded = false;
 this.state.contacts.find(contact => { if (contact.name.toLowerCase() === data.name.toLowerCase())
   { alert(`${data.name} is already in contacts!`);
   isAdded = true;
+return contact;}
 
-return;}
-
-    
+    return contact;
              
      })
 
