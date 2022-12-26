@@ -23,18 +23,21 @@ formHandler = (data) => {
 
 
 
-let isAdded = '';
+let isAdded = false;
 
-this.state.contacts.map(contact => {if (contact.name.toLowerCase() === data.name.toLowerCase()) {
+this.state.contacts.find(contact => { if (contact.name.toLowerCase() === data.name.toLowerCase())
+  { alert(`${data.name} is already in contacts!`);
   isAdded = true;
-  alert(`${data.name} is already in contacts!`)
-  return;
-    }  
-    else{               
-      isAdded = false;
-    return;
-  }
-                    })
+
+return;}
+
+    
+             
+     })
+
+ 
+  
+  
 
 
                     
