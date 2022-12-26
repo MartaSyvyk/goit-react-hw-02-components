@@ -27,15 +27,19 @@ let isAdded = '';
 
 this.state.contacts.map(contact => {if (contact.name.toLowerCase() === data.name.toLowerCase()) {
   isAdded = true;
+  alert(`${data.name} is already in contacts!`)
+  return;
     }  
     else{               
-      isAdded = false;}
+      isAdded = false;
+    return;
+  }
                     })
 
 
                     
   this.setState(prevState => ({
-    contacts: isAdded == true ? [...prevState.contacts] : [...prevState.contacts, { id: nanoid(5), name: data.name, number: data.number }]
+    contacts: isAdded === true ? [...prevState.contacts] : [...prevState.contacts, { id: nanoid(5), name: data.name, number: data.number }]
 
     
   }))
