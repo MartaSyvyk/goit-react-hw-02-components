@@ -1,4 +1,1 @@
-export const Notification = ({message}) => 
-   
-        <p>{message}</p>
-    
+export const Notification = ({ message }) => <p>{message}</p>;
