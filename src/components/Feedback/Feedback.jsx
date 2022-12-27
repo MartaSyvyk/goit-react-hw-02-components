@@ -30,10 +30,9 @@ export class Feedback extends React.Component {
   render() {
     return (
       <div
-      style={{
-        height: '800px',
-        
-      }}
+        style={{
+          height: '800px',
+        }}
       >
         <h2>Please leave feedback</h2>
         <FeedbackOptions onLeaveFeedback={this.handleClick} />
