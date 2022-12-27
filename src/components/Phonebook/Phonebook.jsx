@@ -61,7 +61,7 @@ export class Phonebook extends React.Component {
   render() {
     return (
       <div>
-        <h1>Pnonebook</h1>
+        <h1>Phonebook</h1>
         <Form onSubmit={this.formHandler} />
         <Filter filter={this.state.filter} handleChange={this.onChange} />
         <h2>Contacts</h2>
