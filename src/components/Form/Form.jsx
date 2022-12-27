@@ -26,7 +26,7 @@ export class Form extends React.Component {
 
   render() {
     return (
-      <form action="" onSubmit={this.handleSubmit}>
+      <form className={css.form} action="" onSubmit={this.handleSubmit}>
         <label htmlFor="">
           Name
           <input
