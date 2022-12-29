@@ -20,7 +20,6 @@ export class Feedback extends React.Component {
 
   handleClick = event => {
     const target = event.currentTarget.textContent;
-    console.log(target);
 
     this.setState(prevState => ({
       [target]: prevState[target] + 1,
