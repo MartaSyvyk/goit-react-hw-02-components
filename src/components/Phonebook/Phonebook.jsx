@@ -18,13 +18,14 @@ export class Phonebook extends React.Component {
   formHandler = data => {
     let isAdded = false;
 
-    this.state.contacts.find(contact => {
+    this.state.contacts.map(contact => {
       if (contact.name.toLowerCase() === data.name.toLowerCase()) {
         alert(`${data.name} is already in contacts!`);
         isAdded = true;
+        
         return contact;
       }
-
+      
       return contact;
     });
 
